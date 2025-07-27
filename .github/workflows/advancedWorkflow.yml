@@ -3,9 +3,9 @@ name: first workflow
 on:
   workflow_dispatch:
 jobs:
-  firstjobs:
-runs-on: ubuntu-latest
-steps:
+    firstjobs:
+    runs-on: ubuntu-latest
+    steps:
     - name: Print Hello World
       run: echo "Hello World! This is the first job"
 
@@ -19,11 +19,10 @@ steps:
         who-to-greet: ${{ github.actor }}
 
     - name: Print Greeting Time
-      run: echo "The time of the greeting was at: ${{ steps.print-to-log.outputs.time }}"
-
-  secondjob:
-    runs-on: ubuntu-latest
-    steps:
+      run: echo "The time of the greeting was at:${{ steps.print-to-log.outputs.time }}"
+      secondjob:
+      runs-on: ubuntu-latest
+      steps:
       - name: secondJob script
         shell: bash
         run: |

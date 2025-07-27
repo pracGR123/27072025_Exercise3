@@ -3,7 +3,7 @@ name: first workflow
 on:
   workflow_dispatch:
 
-jobs:
+firstjobs:
 runs-on: ubuntu-hosted
 steps:
     - name: Print Hello World

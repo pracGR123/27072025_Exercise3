@@ -20,7 +20,8 @@ jobs:
           who-to-greet: ${{ github.actor }}
 
       - name: Print Greeting Time
-        run: echo "The time of the greeting was at: ${{ steps.print-to-log.outputs.time }}"
+        run: |
+         echo "The time of the greeting was at: ${{ steps.print-to-log.outputs.time }}"
 
   secondjob:
     runs-on: ubuntu-latest

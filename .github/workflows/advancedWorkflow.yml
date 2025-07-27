@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  firstjob:
-  runs-on: ubuntu-hosted
-  steps:
+runs-on: ubuntu-hosted
+steps:
     - name: Print Hello World
       run: echo "Hello World! This is the first job"
 

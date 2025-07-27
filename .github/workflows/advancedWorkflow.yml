@@ -2,9 +2,9 @@ name: first workflow
 
 on:
   workflow_dispatch:
-
-firstjobs:
-runs-on: ubuntu-hosted
+jobs:
+  firstjobs:
+runs-on: ubuntu-latest
 steps:
     - name: Print Hello World
       run: echo "Hello World! This is the first job"
